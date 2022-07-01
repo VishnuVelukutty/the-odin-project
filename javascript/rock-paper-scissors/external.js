@@ -75,7 +75,7 @@ function round(){
 
     let rematch = prompt("Wanna Rematch ? y/n")
 
-    if (rematch == "n" || rematch == "N" ) {
+    if (rematch.toLowerCase() == "n" ) {
         if (playerScore>computerScore) {
             alert("We need you Neo") 
         }

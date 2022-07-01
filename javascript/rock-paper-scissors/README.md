@@ -5,3 +5,6 @@ This a test project for TOP's first mini-assignment after completing Javascript 
 
 **Version 2**
 - Added score tally for each round 
+
+**Version 3**
+- Added functions for game and rematch 
