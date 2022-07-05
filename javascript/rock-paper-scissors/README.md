@@ -8,3 +8,6 @@ This a test project for TOP's first mini-assignment after completing Javascript 
 
 **Version 3**
 - Added functions for game and rematch 
+
+**Version 4**
+- Static code removal (in if-else matching)

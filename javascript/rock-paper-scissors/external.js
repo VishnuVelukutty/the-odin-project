@@ -1,9 +1,9 @@
 let playerScore=0;
 let computerScore=0;
+let options=["rock","paper","scissors"];
 
 
 function computerPlay(){
-    let options=["Rock","Paper","Scissors"];
     let random = Math.floor(Math.random() * options.length);
     return options[random];
     }
@@ -13,41 +13,41 @@ function playRound(playerSelection, computerSelection) {
     let humanInput=playerSelection.toLowerCase();
     console.log(humanInput,computerSelection);
 
-    if (humanInput == computerSelection.toLowerCase()){
+    if (humanInput == computerSelection){
         alert("This is a tie");
         alert("Player Score:"+" "+playerScore +" "+"Computer Score:"+" " +computerScore);
     }
-    else if (humanInput == "rock" && computerSelection == "Paper"){
+    else if (humanInput == options[0] && computerSelection == options[1]){
         alert("Computer wins");
         computerScore++;
         alert("Player Score:"+" "+playerScore +" "+"Computer Score:"+" " +computerScore);
         return;
     }
-    else if (humanInput == "rock" && computerSelection == "Scissors"){
+    else if (humanInput == options[0] && computerSelection == options[2]){
         alert("You win");
         playerScore++;
         alert("Player Score:"+" "+playerScore +" "+"Computer Score:"+" " +computerScore);
         return;
     }
-    else if (humanInput == "paper" && computerSelection == "Scissors"){
+    else if (humanInput == options[1] && computerSelection == options[2]){
         alert("Computer wins");
         computerScore++;
         alert("Player Score:"+" "+playerScore +" "+"Computer Score:"+" " +computerScore);
         return;
     }
-    else if (humanInput == "paper" && computerSelection == "Rock" ){
+    else if (humanInput == options[1] && computerSelection == options[0] ){
         alert("You win");
         playerScore++;
         alert("Player Score:"+" "+playerScore +" "+"Computer Score:"+" " +computerScore);
         return;   
     }
-    else if (humanInput == "scissors" && computerSelection == "Rock"){
+    else if (humanInput == options[2] && computerSelection == options[0]){
         alert("Computer wins");
         computerScore++;
         alert("Player Score:"+" "+playerScore +" "+"Computer Score:"+" " +computerScore);
         return;  
     }
-    else if (humanInput == "scissors" && computerSelection == "Paper"){
+    else if (humanInput == options[2] && computerSelection == options[1]){
         alert("You win");
         playerScore++;
         alert("Player Score:"+" "+playerScore +" "+"Computer Score:"+" " +computerScore);
